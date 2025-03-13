@@ -4,7 +4,8 @@ import pandas as pd
 
 app = Dash(__name__)
 
-df = pd.read_excel(r'C:\Users\caiqu\Desktop\PROGRAMAÇÃO\PROJETOS\PROJETOS\ERP\MAIN\faturamento.xlsx', nrows= 4000, sheet_name='Planilha1', engine='openpyxl')
+df = pd.read_excel(r'C:\Users\caiqu\Desktop\PROGRAMAÇÃO\PROJETOS\PROJETOS\Dashboard\MAIN\faturamento.xlsx', nrows= 4000, sheet_name='Planilha1', engine='openpyxl')
+# Lembrete: Caso decida renomear o arquivo, lembre-se de alterar o caminho do arquivo no código.
 
 #o r'C:\Users\caiqu\Desktop\PROGRAMAÇÃO\PROJETOS\PROJETOS\ERP\MAIN\faturamento.xlsx' é o caminho do arquivo que será lido.
 # nrow é o número de linhas que serão lidas, sheet_name é a aba que será lida, engine é o motor de leitura do arquivo.
@@ -83,5 +84,5 @@ def update_output(value):
 # Executa o sistema
 if __name__ == '__main__':
     app.run_server(debug=True)
-    
+  
     
